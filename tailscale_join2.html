@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailscale Quick Join</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background: #f5f7fa;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .btn {
+      display: block;
+      margin: 1rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: #0366d6;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.2s ease;
+      width: 80%;
+      max-width: 320px;
+    }
+    .btn:hover {
+      background: #024a9f;
+    }
+    .note {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Connect to My Media Server</h1>
+  <p>Step 1: Install Tailscale if you don’t have it yet.</p>
+  <a class="btn" href="https://tailscale.com/download">📥 Download Tailscale</a>
+
+  <p>Step 2: Join my private network automatically.</p>
+  <!-- แก้ tskey-xxxx เป็น Auth Key จริง -->
+  <a class="btn" href="tailscale://login?authkey=tskey-auth-k1C9PrddS911CNTRL-SwrQQghHKgLAoVt93GAmgL1Fsip2CqLG">🔗 Auto-Join Network</a>
+
+  <div class="note">
+    Works on iOS & Android.<br />
+    If you already have Tailscale installed, just tap <b>Auto-Join</b>.
+  </div>
+</body>
+</html>
